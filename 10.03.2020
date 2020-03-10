@@ -1,14 +1,11 @@
-Start (real_money, real_price)
+def CandiesBought (real_money, real_price):
 
-candies = 0
+    candies = 0
 
-if real_money <=0 or real_price <=0
-   return 0
-
-else
-
-while real_money - real_price >= 0
-  candies = candies+1
-  real_money = real_money-real_price
-  
-return candies
+    if real_money <=0 or real_price <=0:
+        return 0
+    else:
+        while real_money-real_price>=0:
+            candies+=1
+            real_money=real_money-real_price
+        return candies  
